@@ -1,0 +1,106 @@
+http://127.0.0.1:3000/api/alumnos/frontend/inscribir_examen/2/Backend
+
+###
+
+http://127.0.0.1:3000/
+
+
+###
+
+POST http://127.0.0.1:3000/api/alumnos/frontend/inscribir_alumno HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 7,
+    "nombre": "Pablo Lopez",
+    "turno": "noche",
+    "comision": "C",
+    "debeCorrelativa": false
+}
+
+####
+### GET A FRONTEND
+####
+http://127.0.0.1:3000/api/alumnos/frontend
+
+####
+### GET A BACKEND
+####
+http://127.0.0.1:3000/api/alumnos/backend
+
+####
+### POST A FRONTEND
+####
+POST http://127.0.0.1:3000/api/alumnos/frontend/inscribir_alumno HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 5,
+    "nombre": "Pablo Lopez",
+    "turno": "noche",
+    "comision": "C",
+    "debeCorrelativa": false
+}
+
+####
+### POST A BACKEND
+####
+POST http://127.0.0.1:3000/api/alumnos/backend/inscribir_alumno HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 3,
+    "nombre": "Pablo Lopez",
+    "turno": "noche",
+    "comision": "C",
+    "debeCorrelativa": false
+}
+
+####
+### PUT A BACKEND
+####
+PUT http://127.0.0.1:3000/api/alumnos/backend/5 HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 5,
+    "nombre": "Pablo Lopez",
+    "turno": "tarde",
+    "comision": "CCCCC",
+    "debeCorrelativa": true
+}
+
+####
+### PUT A FRONTEND
+####
+PUT http://127.0.0.1:3000/api/alumnos/frontend/3 HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 3,
+    "nombre": "Pablo Lopez",
+    "turno": "tarde",
+    "comision": "CCCCC",
+    "debeCorrelativa": true
+}
+
+####
+### PATCH A FRONTEND
+####
+PATCH http://127.0.0.1:3000/api/alumnos/frontend/3 HTTP/1.1
+Content-Type: application/json
+
+{
+    "comision": "CCCCCCCCC"
+}
+
+
+####
+### DELETE A FRONTEND
+####
+DELETE http://127.0.0.1:3000/api/alumnos/frontend/3 HTTP/1.1
+
+####
+### DELETE A BACKEND
+####
+DELETE http://127.0.0.1:3000/api/alumnos/backend/3 HTTP/1.1
